@@ -5,7 +5,7 @@
 <br>
 通过在搜索引擎搜索，确实找到了一个能够解锁「隔空投放接收器」的快捷指令，但使用它需要关闭 SIP，并且每次重新启动都要重新运行这个快捷指令，该选项也不会出现在「系统偏好设置——共享」中，可以说仅仅是能用，远谈不上完美。<br>
 <br>
-在折腾黑果的过程中，知道有一个 [FeatureUnlock](https://github.com/acidanthera/FeatureUnlock) 内核补丁，它的功能就是在部分机型上解锁 macOS 的新特性，具体如下：
+折腾黑果的同学应该都知道 [FeatureUnlock](https://github.com/acidanthera/FeatureUnlock) 内核补丁，它的功能就是在部分机型上解锁 macOS 的新特性，具体如下：
 
 ```
 # 解锁以下机型的随航 (Sidecar) 功能
@@ -41,7 +41,7 @@ iMac16,x
 ```
 虽然 macOS 没有 iOS 那么封闭，但我们也没办法直接启用这个内核补丁，而且它需要依赖 [Lilu](https://github.com/acidanthera/Lilu) 这个超级补丁引擎，那我们能不能直接用在黑果使用的引导 [OpenCore](https://github.com/acidanthera/OpenCorePkg) 启动白果，从而启用这个内核补丁呢？<br>
 <br>
-答案是可以的，而且有非常简单的方法。
+答案是可以的，而且有很简单的方法。如果你使用上表中机型且想解锁部分功能，那么下面的工作可以帮助到你。
 
 ## 使用
 ### 准备工作
@@ -77,11 +77,16 @@ iMac16,x
 8. 安装成功后如图所示，退出该程序即可。
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/OpenCore-Legacy-Patcher/OCLP_Done.png)
 
-9. 重新启动 Mac，按住 **Option** 键直至出现引导选择页面再松开，一般有以下两个选项。
+9. 重新启动 Mac，按住 **Option 键**直至出现引导选择页面再松开，一般有以下两个选项。
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/OpenCore-Legacy-Patcher/Boot_Picker_1.png)
 
-10. 选中 EFI Boot 后，按住 Control 键，移动鼠标到下方点击类似刷新的图标，即可锁定该启动项。
+10. 按**左右键**选中 EFI Boot 后，按住 **Control 键**，移动鼠标到下方点击类似刷新的图标，即可锁定该启动项。
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/OpenCore-Legacy-Patcher/Boot_Picker_2.png)
 
 11. 进入系统后，打开「系统偏好设置——共享」，查看是否有**隔空投放接收器**选项，若有请开启并通过其他苹果设备测试是否正常使用。
+![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/OpenCore-Legacy-Patcher/System_Preferences_Sharing.png)
 
+12. 重新启动 Mac，再次检查解锁的功能，尽情使用它吧！
+
+## 声明
+以上教程仅供学习体验，严禁用于商业用途非法获利。因违反此规则导致的一切后果，本人不承担相应法律后果。

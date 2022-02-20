@@ -57,11 +57,11 @@ iMac16,x
 2. 在主页面，我们直接点击 **Setting** 进入设置。
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/main/Images/OpenCore-Legacy-Patcher/OCLP_Home_1.png)
 
-3. 设置页面，先确定机型是否正确，如果不正确自己手动选择正确机型。关闭默认打开的 **Show Boot Picker**，开启 **Allow native models**，如图所示。
+3. 在设置页面，先确定机型是否正确，如果不正确需要手动选择正确机型。关闭默认打开的 **Show Boot Picker**，开启 **Allow native models**，如图所示。
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/main/Images/OpenCore-Legacy-Patcher/OCLP_Settings.png)
 之后点击最底下的 **Return to Main Menu** 返回主页面。
 
-4. 在主界面点击顶部的 **Build and Install OpenCore** 进入构建和安装。
+4. 在主页面点击顶部的 **Build and Install OpenCore** 进入构建和安装。
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/main/Images/OpenCore-Legacy-Patcher/OCLP_Home_2.png)
 
 5. 在构建和安装页面点击 **🔨 Build OpenCore** 进行构建。
@@ -77,3 +77,4 @@ iMac16,x
 8. 安装成功后如图所示，退出该程序即可。
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/main/Images/OpenCore-Legacy-Patcher/OCLP_Done.png)
 
+9. 重新启动 Mac，按住 Option 键直至出现引导选择页面。

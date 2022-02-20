@@ -86,7 +86,7 @@ iMac16,x
 11. 进入系统后，打开「系统偏好设置——共享」，查看是否有**隔空播放接收器**选项，若有请开启并通过其他苹果设备测试是否正常使用。
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/OpenCore-Legacy-Patcher/System_Preferences_Sharing.png)
 
-12. 重新启动 Mac，再次检查解锁的功能，尽情使用它吧！
+12. 重新启动 Mac，再次检查解锁的功能是否正常，尽情使用它吧！
 
 ## 声明
-以上教程仅供学习体验，严禁用于商业用途非法获利。因违反此规则导致的一切后果，本人不承担相应法律后果。
+以上教程仅供学习体验，严禁用于商业用途非法获利。因违反此规则导致的一切后果，本人不承担相应法律责任。

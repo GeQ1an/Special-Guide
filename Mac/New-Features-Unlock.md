@@ -77,4 +77,11 @@ iMac16,x
 8. 安装成功后如图所示，退出该程序即可。
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/OpenCore-Legacy-Patcher/OCLP_Done.png)
 
-9. 重新启动 Mac，按住 Option 键直至出现引导选择页面。
+9. 重新启动 Mac，按住 **Option** 键直至出现引导选择页面再松开，一般有以下两个选项。
+![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/OpenCore-Legacy-Patcher/Boot_Picker_1.png)
+
+10. 选中 EFI Boot 后，按住 Control 键，移动鼠标到下方点击类似刷新的图标，即可锁定该启动项。
+![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/OpenCore-Legacy-Patcher/Boot_Picker_2.png)
+
+11. 进入系统后，打开「系统偏好设置——共享」，查看是否有**隔空投放接收器**选项，若有请开启并通过其他苹果设备测试是否正常使用。
+

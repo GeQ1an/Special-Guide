@@ -45,15 +45,35 @@ iMac16,x
 
 ## 使用
 ### 准备工作
-下载最新的 [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher/releases) GUI 版本（截图中最新版为 0.4.2，并不是一定要下载这个版本）。
+跳转到  [OpenCore-Legacy-Patcher/Releases](https://github.com/dortania/OpenCore-Legacy-Patcher/releases) 下载最新的 GUI 版本 (截图中最新版为 0.4.2，并不是一定要下载这个版本)。
 
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/main/Images/OpenCore-Legacy-Patcher/Download_OCLP.png)
 
-下载完成后解压（一般使用系统下载器下载会自动解压），将 OpenCore-Patcher.app 移动到「应用程序」中。
+下载完成后解压 (一般使用系统下载器下载会自动解压)，将 OpenCore-Patcher.app 移动到「应用程序」中。
 
 ### 开始使用
-打开 OpenCore Patcher，图标短暂出现在程序坞后会消失，这是正常现象，大约等待 10 秒即可打开（因为要检测硬件）。<br>
-<br>
-打开后，我们直接点击 **Setting** 
+1. 打开 OpenCore Patcher，图标短暂出现在程序坞后会消失，这是正常现象，大约等待 10 秒左右便会出现主页面。
+
+2. 在主页面，我们直接点击 **Setting** 进入设置。
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/main/Images/OpenCore-Legacy-Patcher/OCLP_Home_1.png)
+
+3. 设置页面，先确定机型是否正确，如果不正确自己手动选择正确机型。关闭默认打开的 **Show Boot Picker**，开启 **Allow native models**，如图所示。
+![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/main/Images/OpenCore-Legacy-Patcher/OCLP_Settings.png)
+之后点击最底下的 **Return to Main Menu** 返回主页面。
+
+4. 在主界面点击顶部的 **Build and Install OpenCore** 进入构建和安装。
+![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/main/Images/OpenCore-Legacy-Patcher/OCLP_Home_2.png)
+
+5. 在构建和安装页面点击 **🔨 Build OpenCore** 进行构建。
+![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/main/Images/OpenCore-Legacy-Patcher/OCLP_Build_1.png)
+程序会针对当前设置和硬件自动构建 OpenCore 引导，此过程需要网络。
+
+6. 构建成功后，点击顶部 **🔩 Install OpenCore** 进入安装步骤。
+![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/main/Images/OpenCore-Legacy-Patcher/OCLP_Build_2.png)
+
+7. 先选择系统磁盘 (如果不知道哪个是系统磁盘，可推出所有外置磁盘后操作)，再选择 EFI 分区，输入本机密码即可进行安装。
+![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/main/Images/OpenCore-Legacy-Patcher/OCLP_Install.png)
+
+8. 安装成功后如图所示，退出该程序即可。
+![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/main/Images/OpenCore-Legacy-Patcher/OCLP_Done.png)
 

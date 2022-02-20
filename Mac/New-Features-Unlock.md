@@ -39,10 +39,21 @@ Macmini7,1
 MacPro6,1
 iMac16,x
 ```
-虽然 macOS 没有 iOS 那么封闭，但我们也没办法直接启用这个内核补丁，而且它需要依赖 [Lilu](https://github.com/acidanthera/Lilu) 这个超级补丁引擎，那我们能不能直接用在黑果使用的引导 [OpenCore](https://github.com/acidanthera/OpenCorePkg) 启动白果，启用这两个内核补丁呢？<br>
+虽然 macOS 没有 iOS 那么封闭，但我们也没办法直接启用这个内核补丁，而且它需要依赖 [Lilu](https://github.com/acidanthera/Lilu) 这个超级补丁引擎，那我们能不能直接用在黑果使用的引导 [OpenCore](https://github.com/acidanthera/OpenCorePkg) 启动白果，从而启用这个内核补丁呢？<br>
 <br>
 答案是可以的，而且有非常简单的方法。
 
 ## 使用
 ### 准备工作
-下载最新的 [OpenCore-Legacy-Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher/releases) GUI 版本（截图中最新版为 0.4.2，并不是一定要下载这个版本）。
+下载最新的 [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher/releases) GUI 版本（截图中最新版为 0.4.2，并不是一定要下载这个版本）。
+
+![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/main/Images/OpenCore-Legacy-Patcher/Download_OCLP.png)
+
+下载完成后解压（一般使用系统下载器下载会自动解压），将 OpenCore-Patcher.app 移动到「应用程序」中。
+
+### 开始使用
+打开 OpenCore Patcher，图标短暂出现在程序坞后会消失，这是正常现象，大约等待 10 秒即可打开（因为要检测硬件）。<br>
+<br>
+打开后，我们直接点击 **Setting** 
+![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/main/Images/OpenCore-Legacy-Patcher/OCLP_Home_1.png)
+

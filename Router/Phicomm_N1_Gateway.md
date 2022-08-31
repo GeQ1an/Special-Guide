@@ -81,4 +81,6 @@ N1 作为旁路由时，启用负载均衡后开机一段时间会造成防火�
 下面是设备测速截图，网络：天津电信 500M 宽带，代理：Dler Cloud 日本 AC 节点，跑满带宽无压力。
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/Phicomm_N1/Speedtest.png)
 
+因为我不玩游戏，所以对于在路由器使用 OpenClash 后的游戏体验如何就不得而知了，游戏玩家可以发起 [Issues](https://github.com/GeQ1an/Special-Guide/issues) 进行讨论。
+
 以上就是全部内容，后续可能会因使用中的经验对本文进行修改，如果你对此旁路由解决方案感兴趣，赶快行动起来吧！

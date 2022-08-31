@@ -48,9 +48,9 @@
 5. 进入主路由后台，修改 DHCP 服务的「DNS」和「默认网关」为`192.168.31.2`(你设置的 N1 地址)，点击保存。
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/Phicomm_N1/Router_DHCP_02.png)
 
-等待主路由重启，设备再次接入局域网后，获取到的网关应该是我们指定的 N1 地址，此时 N1 已经接管了局域网网络，可以使用固件自带的 OpenClash 或 ShadowSocksR Plus+ 等服务创建科学上网环境。
+等待主路由重启，设备再次接入局域网后，获取到的网关应该是我们指定的 N1 地址，此时 N1 已经接管了局域网网络，可以使用 OpenWrt 固件自带的 OpenClash 或 ShadowSocksR Plus+ 等服务创建科学上网环境。
 
-但目前只是能用，还不够完善，所以你需要再通过几个小步骤对 N1 的接管进行优化。
+但做完以上工作仅仅是能用的状态，还不够完善，所以我们需要再通过几个小步骤对 N1 的接管进行优化。
 
 ## 优化
 ### 关闭 N1 的 WiFi
@@ -60,15 +60,15 @@ N1 的 WiFi 性能很差，开启还会对网络造成一定干扰，所以推�
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/Phicomm_N1/OpenWrt_Network_Wireless.png)
 
 ### 删除负载均衡规则
-N1 作为旁路由时，启用负载均衡后开机一段时间会造成防火墙错误，需要重启防火墙 (有时甚至无法访问 N1 只能重启 N1) 才能正确连接 N1 访问或联网，所以我们直接删掉相关内容。
+N1 作为旁路由时，启用负载均衡后开机一段时间会造成防火墙错误，需要重启防火墙 (有时甚至无法访问 N1 只能重启 N1) 才能正确连接 N1 访问互联网，所以我们直接删掉相关内容。
 
 打开 N1 后台，点击左侧「网络——负载均衡」，逐一点击右侧「接口」「成员」「策略」「规则」，删掉里面的所有条目。
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/Phicomm_N1/OpenWrt_Network_LoadBalancing.png)
 
 ### 关闭 IPv6（可选）
-当前 Clash 对 IPv6 的支持并不友好，当你的优先使用 IPv6 的设备或软件 (如 macOS 中的 Safari) 遇到访问网络或开启网页变慢时，你可能需要关闭 IPv6 来获得正常的访问速度。
+当前 Clash 对 IPv6 的支持并不友好，当我们手中优先使用 IPv6 的设备或软件 (如 macOS 中的 Safari) 遇到访问网络或开启网页变慢时，你可能需要关闭 IPv6 来获得正常的访问速度。
 
-进入主路由后台，关闭局域网 IPv6 功能，小米路由器在「常用设置——上网设置」中。
+进入主路由后台，关闭 IPv6 功能，小米路由器在「常用设置——上网设置」中。
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/Phicomm_N1/Router_IPv6_01.png)
 
 进入 N1 后台，点击左侧「网络——接口」，再点击右侧「LAN」的「修改」，将上方「基础设置」中的「IPv6 分配长度」、下方「IPv6 设置」中的服务全部修改为`已禁用`。

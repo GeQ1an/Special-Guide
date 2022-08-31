@@ -39,7 +39,7 @@
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/Phicomm_N1/OpenWrt_Network_Interfaces_04.png)
 最后修改下方「基本设置」中的选项，勾选「忽略此接口」，然后点击右下角的「保存&应用」。
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/Phicomm_N1/OpenWrt_Network_Interfaces_05.png)
-因为修改了 IP 段，此时界面会卡柱，等待 1 分钟左右拔掉 N1 电源即可。
+因为修改了 IP 段，此时界面会卡住，等待 1 分钟左右拔掉 N1 电源即可。
 
 4. 通过网线将 N1 连接至主路由的 LAN 口并接通电源，等待 1 分钟左右启动后，在设备的浏览器输入`192.168.31.2`(你设置的 N1 地址) 进入 N1 后台，点击左侧「网络——防火墙」，再点击右侧上方「自定义规则」。
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/Phicomm_N1/OpenWrt_Network_Firewall_01.png)
@@ -48,7 +48,7 @@
 5. 进入主路由后台，修改 DHCP 服务的「DNS」和「默认网关」为`192.168.31.2`(你设置的 N1 地址)，点击保存。
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/Phicomm_N1/Router_DHCP_02.png)
 
-等待主路由重启，设备再次接入局域网后，获取到的网关应该是我们指定的 N1 地址，此时 N1 已经接管了局域网网络，可以使用 OpenClash 或 ShadowSocksR Plus+ 等软件创建科学上网环境。
+等待主路由重启，设备再次接入局域网后，获取到的网关应该是我们指定的 N1 地址，此时 N1 已经接管了局域网网络，可以使用固件自带的 OpenClash 或 ShadowSocksR Plus+ 等服务创建科学上网环境。
 
 但目前只是能用，还不够完善，所以你需要再通过几个小步骤对 N1 的接管进行优化。
 

@@ -78,6 +78,8 @@ N1 作为旁路由时，启用负载均衡后开机一段时间会造成防火�
 到了这里我们的工作基本做完了，其余功能的开发全看你的折腾能力。截止发文时，N1 已稳定运行 5 天 12 小时。
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/Phicomm_N1/OpenWrt_Status_Overview.png)
 
+如果在 iOS/iPadOS 上使用 Quantumult X 或 Loon，则可设置连接当前已经代理的 WiFi 网络自动更改为直连模式，详情可参考下面配置文件 [General] 部分：[Quantumult X](https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/QuantumultX.conf) | [Loon](https://raw.githubusercontent.com/GeQ1an/Rules/master/Loon/Loon.conf) 设置使用。
+
 下面是设备测速截图，网络：天津电信 500M 宽带，代理：Dler Cloud 日本 AC 节点，跑满带宽无压力。
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/Phicomm_N1/Speedtest.png)
 

@@ -75,14 +75,14 @@ N1 作为旁路由时，启用负载均衡后开机一段时间会造成防火�
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/Phicomm_N1/OpenWrt_Network_Interfaces_06.png)
 
 ## 尾声
-到了这里我们的工作基本做完了，其余功能的开发全看你的折腾能力。截止发文时，N1 已稳定运行 5 天 12 小时。
+到了这里我们的工作基本做完了，其余功能的开发全看你的折腾能力。截止发文时，N1 已稳定运行 10 天。
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/Phicomm_N1/OpenWrt_Status_Overview.png)
 
-如果在 iOS/iPadOS 上使用 Quantumult X 或 Loon，则可设置连接当前已经代理的 WiFi 网络自动更改为直连模式，详情可参考下面配置文件 [General] 部分：[Quantumult X](https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/QuantumultX.conf) | [Loon](https://raw.githubusercontent.com/GeQ1an/Rules/master/Loon/Loon.conf) 设置使用。
+如果在 iOS/iPadOS 上使用 Quantumult X 或 Loon 作为代理软件，则可设置连接当前已经代理的 WiFi 网络自动更改为直连模式，详情可参考对应软件配置文件 ([Quantumult X](https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/QuantumultX.conf)/[Loon](https://raw.githubusercontent.com/GeQ1an/Rules/master/Loon/Loon.conf)) 的 [General] 部分设置使用。
 
 下面是设备测速截图，网络：天津电信 500M 宽带，代理：Dler Cloud 日本 AC 节点，跑满带宽无压力。
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/Phicomm_N1/Speedtest.png)
 
-因为我不玩游戏，所以对于在路由器使用 OpenClash 后的游戏体验如何就不得而知了，游戏玩家可以发起 [Issues](https://github.com/GeQ1an/Special-Guide/issues) 进行讨论。
+因为我不玩游戏，所以对于在路由器 (旁路由) 使用 OpenClash 后的游戏体验如何就不得而知了，游戏玩家可以发起 [Issues](https://github.com/GeQ1an/Special-Guide/issues) 进行讨论。
 
 以上就是全部内容，后续可能会因使用中的经验对本文进行修改，如果你对此旁路由解决方案感兴趣，赶快行动起来吧！

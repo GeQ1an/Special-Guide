@@ -75,7 +75,7 @@ N1 作为旁路由时，启用负载均衡后开机一段时间会造成防火�
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/Phicomm_N1/OpenWrt_Network_Interfaces_06.png)
 
 ## 尾声
-到了这里我们的工作基本做完了，其余功能的开发全看你的折腾能力。截止发文时，N1 已稳定运行 10 天。
+到了这里我们的工作基本做完了，其余功能的开发全看你的折腾能力。截止发文时，N1 已稳定运行超过 10 天。
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/Phicomm_N1/OpenWrt_Status_Overview.png)
 
 如果在 iOS/iPadOS 上使用 Quantumult X 或 Loon 作为代理软件，则可设置连接当前已经代理的 WiFi 网络自动更改为直连模式，详情可参考对应软件配置文件 ([Quantumult X](https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/QuantumultX.conf)/[Loon](https://raw.githubusercontent.com/GeQ1an/Rules/master/Loon/Loon.conf)) 的 [General] 部分设置使用。

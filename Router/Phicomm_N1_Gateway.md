@@ -74,6 +74,20 @@ N1 作为旁路由时，启用负载均衡后开机一段时间会造成防火�
 进入 N1 后台，点击左侧「网络——接口」，再点击右侧「LAN」的「修改」，将上方「基础设置」中的「IPv6 分配长度」、下方「IPv6 设置」中的服务全部修改为`已禁用`。
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/Phicomm_N1/OpenWrt_Network_Interfaces_06.png)
 
+### 修改防火墙设置（疑惑）
+更新 OpenClash 0.45.59 及对应内核后，会经常偶发无法访问外网的情况，经研究重新连接 LAN 口可以暂时解决。
+
+为了解决这个问题，开始了刷固件之路，但只要配置好用不了太久就会出现无法访问外网的情况。
+
+刷了五个不同版本并按使用习惯配置好，实在疲了，就没有配置 OpenClash，结果很意外，超过两天都没出现无法访问外网的情况。
+
+后来经过求助急查阅资料，尝试了额外修改防火墙设置，再次配置好 OpenClash 后，到目前已经使用三天没有出现问题。
+
+如果你也遇到了这种情况，请尝试参照下方修改防火墙设置。
+
+进入 N1 后台，点击左侧「网络——防火墙」，在右侧上方「常规设置」取消勾选`启用 SYN-flood 防御`，在右侧下方「区域」勾选`LAN 口的 IP 动态伪装`，点击右下角的「保存&应用」。
+![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/Phicomm_N1/OpenWrt_Network_Firewall_02.png)
+
 ## 尾声
 到了这里我们的工作基本做完了，其余功能的开发全看你的折腾能力。截止发文时，N1 已稳定运行超过 10 天。
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/Phicomm_N1/OpenWrt_Status_Overview.png)

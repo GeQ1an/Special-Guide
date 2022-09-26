@@ -21,7 +21,8 @@
 1. 进入主路由后台，查看 DHCP 服务的「起始和结束 IP」和「局域网 IP 地址」，小米路由器在「常用设置——局域网设置」内。
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/Phicomm_N1/Router_DHCP_01.png)
 
-2. 将 N1 通电，使用设备 (电脑或手机) 通过网线或 WiFi (密码：password) 连接 N1，手动设置设备的 IP 地址为`192.168.1.X`(建议 X 大于 10 小于 200)，子网掩码为`255.255.255.0`，网关为`192.168.1.1`。
+2. 将 N1 通电，使用设备 (电脑或手机) 通过网线或 WiFi (密码：password) 连接 N1，查看网络信息检查是否正确分配了 IP 等信息。
+如果没有，手动设置设备的 IP 地址为`192.168.1.X`(建议 X 大于 10 小于 200)，子网掩码为`255.255.255.0`，网关为`192.168.1.1`。
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/Phicomm_N1/Network_01.png)
 
 3. 使用设备的浏览器输入`192.168.1.1`打开 N1 后台 (账号：root，密码：password)，点击左侧「网络——接口」，再点击右侧「LAN」的「修改」。

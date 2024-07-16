@@ -34,16 +34,7 @@
 
 4. 重启后重新打开光猫后台，点击上方「网络——网络设置」，新建一个连接，建议桥接由路由器拨号（少一层 NAT）
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/ZTE_Modem/ZTE_Modem_2.png)
-○ 封装类型： PPPoE <br>
-○ 连接模式： 桥接 <br>
-○ 业务类型： 上网 <br>
-○ IP模式： IPv4&IPv6 <br>
-○ VLAN 模式： 改写(tag) <br>
-○ VlanID： 148（根据自己情况填写，天津电信是 148） <br>
-○ DHCP服务使能： 不勾选 <br>
-○ host模式： 不勾选 <br>
-○ LAN端口绑定： 不勾选 <br>
-全部选好后，点击右下方「添加」<br>
+需要注意「VlanID」根据自己情况填写（天津电信是 148），不勾选「DHCP服务使能、host模式、LAN端口绑定」，点击右下方「添加」<br>
 *（不勾选 LAN 口绑定是因为中兴光猫勾选 LAN 口绑定后属于软桥接，重度使用可能会有性能问题，不勾选则可以有效解决这个问题。）*
 
 5. 如果有 IPTV，再新建一个连接填入有关信息，注意绑定 LAN 端口，并打开「应用——IGMP设置」设置好组播，如果没有则可跳过直接进行下一步操作
@@ -84,7 +75,9 @@
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/ZTE_Modem/ZTE_Modem_8.png)
 
 ### 测速
-测速请确保设备速率瓶颈超过千兆，比如 iPhone，除了 iPhone 15 Pro 系列 WiFi 最高支持 2x2 MIMO 160Mhz，可以握手 2400Mbps 速率外，iPhone 11-15 最高只支持 2x2 MIMO 80Mhz，可以握手 1200Mbps 速率，实际测速大概只能到 800Mbps 左右。可以使用较新的支持 WiFi6 的 Android 设备进行测速，基本都能握手 2400Mbps 速率，足以跑满千兆宽带。目前手机端花瓣测速的节点较多，可以下载使用。
+测速请确保设备速率瓶颈超过千兆，比如 iPhone，除了 iPhone 15 Pro 系列 WiFi 最高支持 2x2 MIMO 160Mhz，可以握手 2400Mbps 速率外，iPhone 11-15 最高只支持 2x2 MIMO 80Mhz，可以握手 1200Mbps 速率，实际测速大概只能到 800Mbps 左右。
+
+所以无线设备建议使用较新的支持 WiFi6 的 Android 设备进行测速，基本都能握手 2400Mbps 速率，目前手机端花瓣测速的节点比较多，可以选择使用。
 
 下图是我的测试结果。直连使用花瓣测速本地节点进行测速，代理使用 Dler Cloud 日本 AC 节点通过 Speedtest 进行测试。
 

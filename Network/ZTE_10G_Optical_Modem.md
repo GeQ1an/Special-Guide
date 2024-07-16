@@ -25,7 +25,7 @@
 
 ### 开始设置
 #### 光猫基础设置
-1. 光猫插电，将网线插入光猫任一网口，连接电脑与光猫
+1. 光猫插电（不插入光纤），将网线插入光猫任一网口，连接电脑与光猫
 
 2. 浏览器打开 192.168.1.1，输入默认管理员账号 `telecomadmin` 和密码 `nE7jA%5m` 进入后台
 
@@ -41,7 +41,7 @@
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/ZTE_Modem/ZTE_Modem_3.png)
 
 #### 光猫认证设置
-光猫认证方法有很多种，最常见的是 LOID 认证、SN 认证、设备密码（ONT Password）认证，也许还有 MAC 组合认证，自己按需搭配使用即可
+光猫认证方法有很多种，最常见的是 LOID 认证、SN 认证、设备密码（ONT Password）认证，也许还有 MAC 组合认证，自己按需搭配使用即可。
 1. LOID 认证 <br>
 点击顶部「网络——远程管理」，左侧「宽带识别码认证」，填入自己的 LOID，如果有密码，勾选使用密码一并填入
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/ZTE_Modem/ZTE_Modem_4.png)
@@ -55,14 +55,14 @@
 修改设备密码输入 `setmac 1 2179 你的密码`，回车 <br>
 修改 MAC 输入 `setmac 1 32769 MAC地址`，回车 <br>
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/ZTE_Modem/ZTE_Modem_6.png)
-设置好认证信息后，我们就可以把光猫断电，接入光纤后重新接入电源
+设置好认证信息后，我们就可以把光猫断电，插入光纤后重新接入电源
 
 #### 光猫完善设置
 光猫接入光纤后，我们首先需要确定 OLT 认证是否正常，打开光猫后台，查看状态总览中光路（OLT）认证是否显示认证成功。如果成功，那么恭喜你即将完成设置；如果未成功，请返回上一步核查设置。
 
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/ZTE_Modem/ZTE_Modem_7.png)
 
-此时 OLT 认证成功，但会 ITMS 注册会显示注册失败，我们重新打开 Telnet 解决这个问题。
+此时 OLT 认证成功，但 ITMS 注册会显示注册失败，我们重新打开 Telnet 解决这个问题。
 
 打开终端输入 `telnet 192.168.1.1`，输入之前我们提到的账号和密码
 
@@ -75,9 +75,9 @@
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/ZTE_Modem/ZTE_Modem_8.png)
 
 ### 测速
-测速请确保设备速率瓶颈超过千兆，比如 iPhone，除了 iPhone 15 Pro 系列 WiFi 最高支持 2x2 MIMO 160Mhz，可以握手 2400Mbps 速率外，iPhone 11-15 最高只支持 2x2 MIMO 80Mhz，可以握手 1200Mbps 速率，实际测速大概只能到 800Mbps 左右。
+测速请确保设备速率瓶颈超过千兆，对于 iPhone 而言，除了 iPhone 15 Pro 系列 WiFi 最高支持 2x2 MIMO 160Mhz，可以握手 2400Mbps 速率外，iPhone 11-15 最高只支持 2x2 MIMO 80Mhz，可以握手 1200Mbps 速率，实际测速大概只能到 800Mbps 左右。
 
-所以无线设备建议使用较新的支持 WiFi6 的 Android 设备进行测速，基本都能握手 2400Mbps 速率，目前手机端花瓣测速的节点比较多，可以选择使用。
+所以无线设备建议使用支持 WiFi6 的 Android 设备进行测速，较新的设备基本都能握手 2400Mbps 速率，目前手机端花瓣测速的节点比较多，可以选择使用。
 
 下图是我的测试结果。直连使用花瓣测速本地节点进行测速，代理使用 Dler Cloud 日本 AC 节点通过 Speedtest 进行测试。
 

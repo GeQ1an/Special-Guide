@@ -58,11 +58,11 @@
 设置好认证信息后，我们就可以把光猫断电，插入光纤后重新接入电源
 
 #### 光猫完善设置
-光猫接入光纤后，我们首先需要确定 OLT 认证是否正常，打开光猫后台，查看状态总览中光路（OLT）认证是否显示认证成功。如果成功，那么恭喜你即将完成设置；如果未成功，请返回上一步核查设置。
+光猫接入光纤后，我们首先需要确定 OLT 认证是否正常，打开光猫后台，查看状态总览中「光路（OLT）认证」是否显示认证成功。如果成功，那么恭喜你即将完成设置；如果未成功，请返回上一步核查设置。
 
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/ZTE_Modem/ZTE_Modem_7.png)
 
-此时 OLT 认证成功，但 ITMS 注册会显示注册失败，我们重新打开 Telnet 解决这个问题。
+此时 OLT 认证成功，但「管理（ITMS）注册」会显示注册失败，我们重新打开 Telnet 解决这个问题。
 
 打开终端输入 `telnet 192.168.1.1`，输入之前我们提到的账号和密码
 
@@ -75,7 +75,7 @@
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/ZTE_Modem/ZTE_Modem_8.png)
 
 ### 测速
-测速请确保设备速率瓶颈超过千兆，对于 iPhone 而言，除了 iPhone 15 Pro 系列 WiFi 最高支持 2x2 MIMO 160Mhz，可以握手 2400Mbps 速率外，iPhone 11-15 最高只支持 2x2 MIMO 80Mhz，可以握手 1200Mbps 速率，实际测速大概只能到 800Mbps 左右。
+测速请确保设备的速率瓶颈超过千兆，对于 iPhone 而言，除了 iPhone 15 Pro 系列 WiFi 最高支持 2x2 MIMO 160Mhz，可以握手 2400Mbps 速率外，iPhone 11-15 最高只支持 2x2 MIMO 80Mhz，可以握手 1200Mbps 速率，实际测速大概只能到 800Mbps 左右。
 
 所以无线设备建议使用支持 WiFi6 的 Android 设备进行测速，较新的设备基本都能握手 2400Mbps 速率，目前手机端花瓣测速的节点比较多，可以选择使用。
 
@@ -88,24 +88,24 @@
 ### 其他
 #### 中兴光猫常用 Telnet 命令
 1. 查看系统参数<br>
-setmac show2
+`setmac show2`
 
 2. 修改管理员账户和密码<br>
-sendcmd 1 DB set DevAuthInfo 0 User admin （改管理员名称为admin）<br>
-sendcmd 1 DB set DevAuthInfo 0 Pass 12345678 （改管理员密码12345678）<br>
-sendcmd 1 DB save （保存）
+`sendcmd 1 DB set DevAuthInfo 0 User admin` （改管理员名称为 admin）<br>
+`sendcmd 1 DB set DevAuthInfo 0 Pass 12345678` （改管理员密码为 12345678）<br>
+`sendcmd 1 DB save` （保存）
 
 3. 修改连接数限制<br>
-sendcmd 1 DB p CltLmt （查看当前用户数量）<br>
-sendcmd 1 DB set CltLmt 8 Max 100 （修改最大用户数量为100，建议最大数目不超过255）<br>
-sendcmd 1 DB save （保存）
+`sendcmd 1 DB p CltLmt` （查看当前用户数量）<br>
+`sendcmd 1 DB set CltLmt 8 Max 100` （修改最大用户数量为100，建议最大数目不超过255）<br>
+`sendcmd 1 DB save` （保存）
 
 #### 获取超密等骚操作
 1. 打电话给装维师傅，说想要光猫的超级密码改桥接，理由可以说“玩游戏老是跳 ping 想改桥接试一下，只改桥接不会乱搞”，一般会给。
  
 2. 如果装维师傅不给，或者说有规定之类的，那只好折腾一点重置一下光猫，然后报修，师傅来调试时，随时准备偷拍 LOID 认证信息或超级密码（记得静音）。如果是没有 WiFi 的光猫，可以准备好 Windows 电脑让师傅设置光猫，Edge 浏览器会自动记录填写的表格信息一段时间，双重保险。
 
-3. 如果是电信光猫（不知道联通光猫是否也有这个入口）且只需要知道 VLAN ID 的话，可以打开光猫后台，点击底部「快速装维入口——网络侧信息」，连接名称后方的数字就是对应的 VLAN ID
+3. 如果是电信光猫（不知道联通光猫是否也有这个入口）且只需要知道 VLAN ID 的话，可以打开光猫后台，点击底部「快速装维入口——网络侧信息」，连接名称后方的数字就是对应的 VLAN ID。
 
 ## 免责声明
-以上内容仅供参考，严禁用于非法用途。刷机、修改信息等操作可能会造成设备损坏，本人不承担任何责任，请认真思考后再决定是否尝试。
+以上内容仅供参考，严禁用于非法用途。自行更换的光猫存在被运营商拉黑的可能，由此产生的一切损失均与本人无关，本人不承担任何责任，请认真思考后再决定是否尝试。

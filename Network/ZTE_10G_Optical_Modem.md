@@ -51,7 +51,7 @@
 这些信息需要使用 Telnet 进行修改，请自行搜索所用平台使用 Telnet 的方法<br>
 打开终端，输入 `telnet 192.168.1.1`，回车，出现 Login: 时输入默认账号 `root`，回车，输入默认密码 `Zte521`，回车
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/ZTE_Modem/ZTE_Modem_5.png)
-修改 SN，输入 `setmac 1 2176 SN前四位`，回车，输入 `setmac 1 2176 SN后八位`，回车 <br>
+修改 SN，输入 `setmac 1 2176 SN前四位`，回车，输入 `setmac 1 2177 SN后八位`，回车 <br>
 修改设备密码输入 `setmac 1 2179 你的密码`，回车 <br>
 修改 MAC 输入 `setmac 1 32769 MAC地址`，回车 <br>
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/ZTE_Modem/ZTE_Modem_6.png)
@@ -75,7 +75,7 @@
 ![](https://raw.githubusercontent.com/GeQ1an/Special-Guide/master/Images/ZTE_Modem/ZTE_Modem_8.png)
 
 ### 测速
-测速请确保设备的速率瓶颈超过千兆，对于 iPhone 而言，除了 iPhone 15 Pro 系列 WiFi 最高支持 2x2 MIMO 160Mhz，可以握手 2400Mbps 速率外，iPhone 11-15 最高只支持 2x2 MIMO 80Mhz，可以握手 1200Mbps 速率，实际测速大概只能到 800Mbps 左右。
+测速请确保设备的速率瓶颈超过千兆，对于 iPhone 而言，除了 iPhone 15 Pro 系列 WiFi 最高支持 2x2 MIMO 160MHz，可以握手 2400Mbps 速率外，iPhone 11-15 最高只支持 2x2 MIMO 80MHz，可以握手 1200Mbps 速率，实际测速大概只能到 800Mbps 左右。
 
 所以无线设备建议使用支持 WiFi6 的 Android 设备进行测速，较新的设备基本都能握手 2400Mbps 速率，目前手机端花瓣测速的节点比较多，可以选择使用。
 
